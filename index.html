@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLOW+PHARMACY</title>
+</head>
+<body>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <link href="lib/XEIcon-2.2.0/xeicon.min.css" rel="stylesheet">
+    <script src="lib/jquery-3.6.0.min.js"> </script> 
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+</head>
+<body>
+
+
+    <script>   
+        $(document).ready(function(){
+
+                // 햄버거 아이콘을 눌렸을 때
+        $('.m_header_wrap .xi-bars').click(function(){
+            $('.m_header_wrap .sidebar_menu').addClass('on');
+
+                // 슬라이드 메뉴 x 보이게
+            $('.m_header_wrap .xi-close').css('display','block');
+            });
+
+                // x를 누르면 메뉴 숨기기
+        $('.m_header_wrap .xi-close').click(function(){
+            $('.m_header_wrap .sidebar_menu').removeClass('on');
+                
+                // x 가리기
+            $('.m_header_wrap .xi-close').css('display','none');
+
+            });
+
+            //메뉴바 depth02 보이게 하기
+ 
+        }); //
+    
+    </script>
+
+
+    <!-- 모바일 헤더 -->
+
+    <div class="m_header_wrap">
+        <!-- 햄버거 -->
+        <i class="xi-bars"></i>
+        <!-- x  -->
+        <i class="xi-close"></i>
+   
+        <div class="sidebar_menu">
+            <ul class="menu_wrap">
+
+                    <li class="depth01">
+                        <a href="#">ABOUT US</a>
+                        <ul class="depth02">
+                            <li><a href="#">ABOUT US</a></li>
+                            <li><a href="#">HISTORY</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <a href="#">PROJECT</a>
+                        <ul class="depth02">
+                            <li><a href="#">SPACE STYLING</a></li>
+                            <li><a href="#">FLOWER STYLING</a></li>
+                            <li><a href="#">EXHIBITION & POP-UP</a></li>
+                            <li><a href="#">BRAND & EVENT PROJECT</a></li>
+                            
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <a href="#">SHOP</a>
+                        <ul class="depth02">
+                            <li><a href="#">NEW ARRIVAL</a></li>
+                            <li><a href="#">PLANTS SPECIMEN</a></li>
+                            <li><a href="#">SLOW OBJECT</a></li>
+                            <li><a href="#">SLOW SELECT</a></li>
+                            <li><a href="#">BEAKER PLANT</a></li>
+                            <li><a href="#">MOSS TERRARIUM</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="depth01">
+                        <a href="#">SHOWROOM</a>
+                        <ul class="depth02">
+                            <li><a href="#">CONTACT</a></li>
+                            
+                        </ul>
+                    </li>
+            </ul>
+        </div>
+    </div> <!--.m_header_wrap end-->
+
+
+
+        <header>
+            <div>
+                <h1>
+                    <a href="#"><img src="img/slowpharmacy logo2.png" alt="로고"></a>
+                </h1>
+                <nav>
+
+                    <ul>
+                        <li class="depth01">
+                            <a href="#">ABOUT US</a>
+                            <ul class="depth02">
+                                <li><a href="#">ABOUT US</a></li>
+                                <li><a href="#">HISTORY</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="depth01">
+                            <a href="#">PROJECT</a>
+                            <ul class="depth02">
+                                <li><a href="#">SPACE STYLING</a></li>
+                                <li><a href="#">FLOWER STYLING</a></li>
+                                <li><a href="#">EXHIBITION & POP-UP</a></li>
+                                <li><a href="#">BRAND & EVENT PROJECT</a></li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="depth01">
+                            <a href="#">SHOP</a>
+                            <ul class="depth02">
+                                <li><a href="#">NEW ARRIVAL</a></li>
+                                <li><a href="#">PLANTS SPECIMEN</a></li>
+                                <li><a href="#">SLOW OBJECT</a></li>
+                                <li><a href="#">SLOW SELECT</a></li>
+                                <li><a href="#">BEAKER PLANT</a></li>
+                                <li><a href="#">MOSS TERRARIUM</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="depth01">
+                            <a href="#">SHOWROOM</a>
+                            <ul class="depth02">
+                                <li><a href="#">CONTACT</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+          
+                </i>
+            </div>
+
+        
+        </header>
+
+        <!-- @@@@@@@@@@@@@ -->
+
+        <section class="main_visual">
+            <div>
+                <img src="img/Untitled2.png" alt="버들"> 
+                <img src="img/main02.png" alt="목화솜">
+                <img src="img/main03.png" alt="나무">
+            </div>
+            <p class="animate__animate__bounceIn">Life be happier through plants.</p>
+
+        </section> <!-- .main_visual end-->
+
+        <!--@@@@@@@@@@@@-->
+
+
+        <div class="cont01">
+            <div class="wrap">
+                <div class="cont01_in">
+                    <img src="img/slow-phamacy01.png" alt="매장풍경">
+                </div>
+
+
+                <div class="box01">
+                        <img src="img/plants-make-you-happier.png" alt="검정">
+                        <img src="img/plants-make-you-happier2.png" alt="흰">
+                        <img src="img/object01.png" alt="반짝이">
+
+                        <p>복잡하고 빠르게 진행되는 현재를 살아가는 우리는<br>
+                            모두 알게 모르게 작은 병을 가지고 있습니다.</p>
+
+                        <p>슬로우 파마씨는 식물을 통해 당신에게<br>
+                        좀 더 느리고 침착한 라이프스타일을 제안합니다.
+                        </p>
+                        
+                </div><!--.box01 end-->
+            </div><!--.wrap end-->
+
+        </div> <!--.cont01 end-->
+
+
+        <!--@@@@@@@@@@@@@-->
+
+        <div class="title">
+            <!-- 온라인샵 제목 -->
+            <div>
+                <img src="img/onlineshop.png" alt="온라인샵 글">
+                <p>
+                    <a href="#">MORE +</a>
+                </p>
+            </div>
+
+        </div><!--.title end-->
+
+
+
+    
+        <section class="cont02">
+
+            <div class="box_wrap">
+                <div class="box_wrap_in">
+
+                    <div class="box01">
+                        <a href="#">
+                            <img src="img/01Delphinium.jpg" alt="델피늄 핑크">   
+                            <p>델피늄 핑크 Delphinium 200ml</p>
+                            <p>39,000원</p>
+                        </a>
+                    </div>
+        
+                    <div class="box02">
+                        <a href="#">
+                            <img src="img/02Capsella.jpg" alt="냉이초">   
+                            <p>냉이초 Capsella 200ml</p>
+                            <p>39,000원</p>
+                        </a>
+                    </div>
+        
+                    <div class="box03">
+                        <a href="#">
+                            <img src="img/03Ruscus.jpg" alt="루스커스">   
+                            <p>루스커스 Ruscus 200ml</p>
+                            <p>39,000원</p>
+                        </a>
+                    </div>
+        
+                    <div class="box04">
+                        <a href="#">
+                            <img src="img/04Tabariafern.jpg" alt="타바리아펀">   
+                            <p>타바리아 펀 Tabaria fern 200ml</p>
+                            <p>39,000원</p>
+                        </a>
+                    </div>
+        
+                    <div class="box05">
+                        <a href="#">
+                            <img src="img/05Hydragea.jpg" alt="수국">   
+                            <p>수국 Hydragea 200ml</p>
+                            <p>39,000원</p>
+                        </a>
+                    </div>
+
+                </div> <!--.bax_wrap_in end-->
+            </div><!--.box_wrap end-->
+       
+        </section><!--.cont02 end-->
+
+            
+       
+        <!--@@@@@@@@@@@@@@@@@@@-->
+
+
+    <section class="cont03">
+        <div class="wrap">
+            
+            <div class="cont03_in">
+                <img src="img/plantsprescription.png" alt="식물처방">
+
+                <p>일상의 피로에 지친 당신에게 식물을 처방해드립니다.</p>
+            </div> <!--.cont03_in end-->
+
+            <!--  -->
+            <div class="wrap02">
+                <div class="cont03_in01">
+                    <img src="img/0302plant.png" alt="솜">
+                    <img src="img/0304plant.png" alt="나뭇가지">
+                    <img src="img/0305stone.png" alt="돌"> 
+                    <img src="img/0306.png" alt="트레이">
+
+                </div> <!--.cont03 in01 end-->
+
+                <div class="cont03_in02">
+                    <img src="img/03pin.png" alt="핀셋">
+                    <img src="img/03spoon.png" alt="스푼">
+                    <img src="img/0301plant.png" alt="솜">
+                    <img src="img/03tag01.png" alt="태그">
+                    <img src="img/03tag02.png" alt="태그2">
+                    <img src="img/03mbag.png" alt="약봉지">
+
+                </div><!-- .cont03_in02 end-->
+            </div><!--.wrap02-->
+
+        </div> <!--.wrap end-->
+
+    </section> <!--.cont03 end-->
+
+
+    <div class="cont03-2">
+
+        <p><a href="#">Find Out More</a></p>
+    </div><!--.cont03 end-->
+
+
+    <!--@@@@@@@@@@@@@@-->
+    
+    <div class="cont04_title">
+
+        <img src="img/showroom.png" alt="쇼룸">
+
+    </div> <!--.cont04_title end-->
+
+
+    <section class="cont04">
+
+        <div class="cont04_wrap">
+            <div class="cont04_l">
+                <img src="img/04plant.png" alt="유리병식물">
+                <p>식물의 온기, 공간을 완성하는 커다란 힘,<br>
+                    식물이 지닌 매력을 느껴보세요.</p>
+
+                <p class="btn01">
+                    <a href="#">Map View
+                    </a>
+                </p>
+            </div><!--.cont04_l end-->
+
+        </div> <!--.cont04_wrap end -->
+
+
+        <div class="cont04_r">
+            <img src="img/slowphamacy02.png" alt="매장사진2">
+        </div> <!--.cont04_r end-->
+
+    </section> <!--.cont04 end-->
+
+
+    <!--@@@@@@@@@@@@@-->
+
+        <footer>
+
+            <div class="footer_wrap">
+
+                <div class="footerbox">
+                    <p>슬로우 파마씨 ㅣ 사업자번호:000-00-00000 ㅣ 대표자: 이은혜 
+                    <span>info@slowphamacy.com</span>
+                    </p>
+        
+                    <p>개인정보보호 책임자:이구름 ㅣ 통신판매업:제2021-서울서초-3211호</p>
+                    <p>OFFICE:02)548-9937 ㅣ SHOWROOM: 02)336-9967</p>
+        
+                    <p>COPYRIGHT 2021 SLOWPHAMACY All rights reversed.</p>
+                </div>
+
+                <div class="insta">
+                    <i class="xi-instagram"></i> 
+                </div><!--.insta end-->
+
+            </div> <!--.footer_wrap end-->
+        </footer>
+
+</body>
+</html>
+    
+</body>
+</html>
