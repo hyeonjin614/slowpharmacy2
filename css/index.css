@@ -1,0 +1,2200 @@
+@charset "utf-8";
+
+
+* {margin: 0; padding: 0;}
+
+
+li {
+    list-style: none;
+    color: #333;
+}
+
+a { text-decoration: none;
+    color: #333;}
+
+
+.all {display: block;
+    margin: 0 auto;
+
+}
+
+/* 반응형 헤더 */
+
+.m_header_wrap {
+    display: none;
+    }
+
+.title div p a {
+    display: none;
+}
+
+
+.fa, .fas {
+    /* 반응형 아이콘 */
+    position: absolute;
+    left: -9999999px;
+}
+
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+
+}
+
+.fas span {
+    display: none;
+}
+
+
+    /* 헤더 */
+
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color:#fff ;
+    border-bottom: 1px solid rgb(108, 108, 108);
+    line-height:70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    /* position:relative; */
+
+    font-family: 'Quicksand', sans-serif;
+
+    
+}
+
+header > div {
+    width:calc(100% - 130px);
+    margin: 0 auto;
+    /* position:relative; */
+    height: 100%;
+}
+
+
+
+header > div h1 {
+    position: absolute;
+
+}
+
+header div img {
+    width: 250px;
+}
+
+header nav { 
+    float: right;
+
+}
+
+
+header nav > ul > li {
+    display: inline-block;
+    vertical-align: top;
+    width: 190px;
+    text-align: center;
+}
+
+
+
+.depth02 {
+    background-color: rgba(255, 255, 255, 0.74);
+    display: none;
+    transition: ease-in 0.3s;
+
+
+}
+
+
+
+header nav > ul > li:hover .depth02 {
+    display: block;
+}
+
+/* 반응형 아이콘 */
+header .xi-bars {
+    display: none;
+}
+
+
+
+/* main_visual */
+
+.main_visual {
+    position: relative;
+    width: 100%;
+    height: 870px;
+    border-top: 1px solid rgb(237, 237, 237);
+ }
+ 
+ .main_visual div {
+     text-align: center;
+
+ }
+ 
+ 
+ .main_visual div img:first-child {
+     width: 85px;
+     position: absolute;
+     top: 57%;
+     left: 25%;
+     transform: translate(-50%, -50%);
+    
+ }
+ 
+ .main_visual div img:nth-child(2) {
+     width: 200px;
+     position: absolute;
+     top: 57%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ 
+ 
+ }
+ 
+ .main_visual div img:last-child {
+     width: 180px;
+ 
+     position: absolute;
+     top: 56%;
+     right: 25%;
+     transform: translate(50%, -50%);
+     
+ 
+ } 
+ 
+ .main_visual p {
+     position: absolute ;
+     top: 84%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     font-family: 'Zen Kurenaido', sans-serif;
+     font-size: 20px;
+     display: block;
+ 
+    
+ }
+ 
+ /* cont01 */
+ 
+ .cont01 {
+     width:100% ;
+    
+     margin-top:100px;
+     text-align: center;
+     /* height: 100%; */
+     /* background-color: red; */
+ 
+  
+ }
+ 
+ .cont01 .wrap  {
+     /* width: 100%; */
+     margin: 0 auto;
+  
+    }
+ 
+    .cont01 .wrap .box01 img:nth-child(2) {
+     display: none;
+    }
+ 
+ 
+ .cont01::after {
+     content: '';
+     display: block;
+     clear: both;
+ }
+ 
+ .cont01 .cont01_in {
+     width: 50%;
+ 
+     float: left;
+     overflow: hidden;
+     /* background-color: chartreuse; */
+    
+   
+ }
+ 
+ 
+ .cont01 .cont01_in img {
+     /* 매장사진 */
+     display: block;
+     transition: ease-in-out .5s;
+     float: right;
+     
+ }
+ 
+
+ .cont01 .cont01_in:hover img {
+    transform: scale(1.2);
+ 
+ }
+ 
+ 
+ .cont01  .box01 {
+     width: 50%;
+     height: 800px;
+     /* background-color: royalblue; */
+     float: left;
+     position: relative;
+ 
+ }
+ 
+ .cont01 .box01 img:first-child {
+     /* plants make you happier */
+     width: 60%;
+     position: absolute;
+     top: 40%;
+     left: 50%;
+     transform: translate( -50%, -50%);
+ }
+ 
+ .cont01 .box01 img:last-of-type{
+     width: 13%;
+     position: absolute;
+     top: 80%;
+     left: 50%;
+     transform: translate( -50%, -50%);
+ }
+ 
+ .cont01 .box01 p {
+     position: absolute;
+     top: 90%;
+     left: 50%;
+     transform: translate(-50%, 50%);
+     line-height: 30px;
+     font-family: 'Noto Sans KR', sans-serif;
+     font-size: 16px;
+ }
+
+
+.cont01 .wrap .box01 p:first-of-type{
+    
+    width: 100%;
+   position: absolute;
+   left: 50%;
+   white-space: inherit;
+}
+
+.cont01 .box01 p:last-of-type {
+    margin-top: 90px;
+    white-space: inherit;
+}
+
+/* 온라인샵 타이틀 */
+
+.title {
+    padding-top:200px;
+    text-align: center;
+
+}
+
+
+.title div {
+    /* background-color: red; */
+    position: relative;
+}
+
+
+.title div img {
+    margin-bottom: 40px;
+    width: 580px;
+  
+}
+
+ .title div p a{
+    /* color: red; */
+    position: absolute;
+    top: 100%;
+    right: 8%;
+    font-family: 'Zen Kurenaido', sans-serif;
+
+}
+
+/* cont02 */
+
+
+.cont02 {
+    /* 온라인샵 */
+
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+
+}
+
+.cont02 .box_wrap_in {
+    /* 상푸 flexa 묶음 */
+
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly; 
+    margin: 0 auto;
+
+}
+
+
+.cont02 img {
+   width: 260px;
+   box-shadow: 2px 2px 2px 2px rgba(51, 51, 51, 0.029);
+}
+
+
+
+/* box01 */
+
+.cont02 .box01 {
+    position: relative;
+    
+}
+
+.cont02 .box01 a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+.cont02 .box01 a p:last-of-type {
+    margin-top: 30px;
+
+}
+
+/* box02 */
+
+.cont02 .box02 {
+    position: relative;
+    
+}
+
+
+.cont02 .box02 a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+
+.cont02 .box02 a p:last-of-type {
+    margin-top: 30px;
+}
+
+
+/* box03 */
+
+
+.cont02 .box03 {
+    position: relative;
+    
+}
+
+.cont02 .box03 a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+
+.cont02 .box03 a p:last-of-type {
+    margin-top: 30px;
+}
+
+ 
+/* box04 */
+
+
+
+.cont02 .box04 {
+    position: relative;
+    
+}
+
+.cont02 .box04 a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+
+.cont02 .box04 a p:last-of-type {
+    margin-top: 30px;
+}
+
+/* box5 */
+
+
+.cont02 .box05 {
+    position: relative;
+    
+}
+
+.cont02 .box05 a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+
+}
+
+
+.cont02 .box05 a p:last-of-type {
+    margin-top: 30px;
+}
+
+
+/* 박스통일 */
+
+.cont02 > div {
+    /* width: 900px; */
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+ 
+    
+   
+}
+
+
+.cont02 > div > img {
+    display: block;
+    width: 100%;
+}
+    
+
+.cont02 > div a p {
+ opacity: 0;
+ transition: all .5s;
+
+}
+/* 상품 글자 hover */
+.cont02 .box01:hover a p {
+    /* 델피늄 핑크 */
+    opacity: 100;
+}
+.cont02 .box01:hover img{
+    /* 델피늄 핑크 이미지 */
+    opacity: 35%;
+}
+
+
+.cont02 .box02:hover a p {
+    /* 냉이초 */
+    opacity: 100;
+}
+.cont02 .box02:hover img {
+    /* 냉이초 이미지 */
+    opacity: 35%;
+}
+
+
+.cont02 .box03:hover a p {
+    /* 루스커스 */
+    opacity: 100;
+}
+.cont02 .box03:hover img {
+    /* 루스커스 */
+    opacity: 35%;
+}
+
+
+.cont02 .box04:hover a p {
+    /* 타바리아 펀 */
+    opacity: 100;
+}
+.cont02 .box04:hover img {
+    /* 타바리아펀 이미지 */
+    opacity: 35%;
+}
+
+.cont02 .box05:hover a p {
+    /* 수국 */
+    opacity: 100;
+}
+.cont02 .box05:hover img {
+    /* 수국 이미지 */
+    opacity: 35%;
+}
+
+
+/* cont03 */
+
+
+.cont03 {
+    width: 100%;
+    height: 780px;
+    position: relative;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    margin-top: 100px;
+
+    /* background-color: aqua; */
+
+}
+
+.cont03 .wrap02 {
+    max-width: 1700px;
+    margin: 0 auto;
+
+}
+
+.cont03 .cont03_in {
+    text-align: center;
+    margin-top: 180px;
+   
+}
+
+.cont03 .cont03_in img {
+    width: 600px;
+    margin-bottom: 30px;
+}
+
+
+/* 사진 배치 */
+
+.cont03 .cont03_in01 img:first-of-type {
+    /* 목화 */
+    width: 300px;
+
+    position:absolute;
+    top: 63%;
+    left: 26%;
+
+}
+
+.cont03 .cont03_in01 img:nth-of-type(2) {
+    /* 나뭇가지 */
+    width: 450px;
+    position: absolute;
+    top: 38%;
+    left: 18%;
+    z-index: -19;
+
+} 
+
+
+.cont03 .cont03_in01 img:nth-of-type(3) {
+    /* 돌멩이 */
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+
+.cont03 .cont03_in01 img:last-of-type {
+    /* 트레이 */
+    width: 500px;
+    position: absolute;
+    top: 34%;
+    left: 15%;
+    z-index: -20;
+    
+}
+
+/*  hover */
+
+.cont03 .wrap .cont03_in01 img:last-of-type {
+    /* 트레이 고정 */
+    opacity: 100;
+}
+
+.cont03 .wrap .cont03_in img {
+    width: 500px;
+    opacity: 100;
+  
+}
+
+
+.cont03 .wrap .cont03_in01 img:nth-of-type(3) {
+    /* 나뭇가지  */
+  transition: ease-in 1.4s;
+}
+
+.cont03 .wrap .cont03_in01 img:nth-of-type(2) {
+    transition: ease-in 1.0s;
+}
+
+
+.cont03 .wrap .cont03_in02 img:nth-of-type(2) {
+    transition: ease-in .9s;
+}
+
+.cont03 .wrap .cont03_in02 img:nth-of-type(4) {
+    transition: ease-in 1s;
+}
+
+.cont03 .wrap .cont03_in02 img:nth-of-type(1) {
+    transition: ease-in 1.5s;
+}
+
+.cont03 .wrap .cont03_in02 img:last-of-type {
+    transition: ease-in 2.0s;
+}
+
+
+/* cont03 in 02 */
+
+.cont03 .cont03_in02 {
+    width: 100%;
+  
+}
+
+.cont03 .cont03_in02 img:first-of-type {
+    /* 핀셋 */
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 42%;
+}
+
+
+.cont03 .cont03_in02 img:nth-of-type(2) {
+    /* 스푼 */
+    width: 300px;
+    position: absolute;
+    top: 46%;
+    left: 47%
+}
+
+
+.cont03 .cont03_in02 img:nth-of-type(3) {
+    /* 버들잎 */
+    width: 340px;
+    position: absolute;
+    top: 40%;
+    left: 65%;
+}
+
+
+.cont03 .cont03_in02 img:nth-of-type(4) {
+    /* 네임택 */
+    width: 300px;
+    position: absolute;
+    top: 69%;
+    left: 46%;
+}
+
+.cont03 .cont03_in02 img:nth-of-type(5) {
+    /* 네임택2 */
+    width: 300px;
+    position: absolute;
+    top: 82%;
+    left: 50%;  
+}
+
+
+.cont03 .cont03_in02 img:last-of-type {
+    /* 약봉지 */
+    width:450px;
+    display: block;
+    position: absolute;
+    z-index: -20;
+    top: 62%;
+    left: 59%;
+
+}
+
+
+/* cont03-2 */
+
+
+.cont03-2 {
+    text-align: center;
+    margin-top: 50px;
+    
+}
+
+.cont03-2 p a {
+    margin: 0 auto;
+    line-height: 50px;
+    transition: ease-in .3s;
+   
+    display: block;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+   
+}
+
+.cont03-2 p a:hover {
+
+    color: #fff;
+    background-color: #333;
+}
+
+
+/* cont04_title */
+
+.cont04_title {
+
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.cont04_title img {
+    width: 550px;
+
+}
+/* cont04 */
+
+.cont04 {
+    width: 100%;
+    /* background-color: rgb(100, 136, 136); */
+}
+
+.cont04 .cont04_wrap {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+
+.cont04 .cont04_wrap .cont04_l {
+    /* 유리병 이미지 wrap */
+    width: 45%;
+    /* background-color: aqua; */
+    float: left;
+  
+}
+
+
+.cont04 .cont04_wrap .cont04_l p:first-of-type {
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+
+.cont04 .cont04_wrap .cont04_l img {
+    /* 유리병 이미지 */
+    width: 480px;
+    margin-top: 100px;
+    padding-left: 70px;
+   
+}
+
+
+.cont04 .cont04_wrap .btn01 a {
+    width: 200px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    transition: ease-in .3s;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.cont04 .cont04_wrap .btn01 a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.cont04 .cont04_wrap .cont04_l::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.cont04 .cont04_wrap .cont04_r {
+    width: 40%;
+
+}
+
+.cont04 .cont04_r img {
+    width: 825px;
+
+}
+
+
+.cont04 .cont04_wrap .cont04_l p {
+    text-align: center;
+}
+
+
+/* footer */
+
+footer {
+
+    width:100%;
+    height: 170px;
+  
+    padding-top: 30px;
+    border-top: 1px solid #333;
+    font-family: 'Quicksand', sans-serif;
+
+    /* background-color: red; */
+   
+}
+
+footer .footer_wrap {
+    margin: 0 auto;
+    width:calc(100% - 130px);
+}
+
+footer .footerbox {
+    width: 50%;
+    /* background-color: chartreuse; */
+    float: left;
+}
+
+footer div p {
+
+line-height: 30px;
+
+}
+
+footer div p:last-of-type {
+    margin-top: 25px;
+}
+
+
+footer div  span { 
+    color: rgb(210, 210, 210);
+    margin-left: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+footer div p:nth-child(3) {
+    color: rgb(133, 133, 133);
+}
+
+footer div p:last-of-type {
+    color: rgb(210, 210, 210);
+}
+
+/* 폰트 */
+
+.footerbox p:first-of-type {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+.footerbox p:nth-of-type(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+
+/* sns */
+
+footer::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+footer .insta {
+    width: 48%;
+    float: left;
+    font-size: 50px;
+    color: rgb(72, 72, 72);
+    text-align: right;
+   
+}
+
+
+@media screen and (width:1680px) {
+    /* 이미지 호버기능 */
+    .cont03 .wrap img {
+        opacity: 0;
+        transition: ease-in-out .8s;
+        }
+
+    .cont03:hover img {
+        opacity: 100;
+   
+        }
+
+    
+}
+
+
+@media screen and (max-width:1024px) {
+
+
+        /* 햄버거 메뉴 */
+        .xi-bars {
+            display: block;
+            font-size: 40px;
+            z-index: 999;
+        }
+
+
+        .xi-close {
+            display: block;
+            font-size: 38px;
+          
+        }
+
+
+        .m_header_wrap {
+            display: block;
+            width: 100%;
+            position: relative;
+            z-index: 999;
+ 
+        }
+
+        .m_header_wrap .xi-bars {
+            /* 햄버거 */
+            position: fixed;
+            top: 1.8%;
+            right: 4%;
+            /* z-index: 9999; */
+            color:#333;
+         
+        }
+
+        .m_header_wrap .xi-close {
+            /* x */
+            position: fixed;
+            top: 2.5%;
+            right: 4%;
+            z-index: 9999;
+            
+            display: none;
+            color:#333;
+         
+        }
+
+        .m_header_wrap .sidebar_menu {
+            width: 60%;
+            height: 100%;
+          
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 999;
+
+            right: -60%;
+            transition: 0.4s ease-in-out;
+            /* 메뉴 슬라이드 */
+            overflow-y: auto;
+            background-color: rgb(255, 255, 255);
+            border-left: 1px solid #333;
+            box-sizing: border-box;
+            
+        }
+
+        .m_header_wrap .sidebar_menu.on {
+
+            right: 0;
+        }
+
+        .m_header_wrap .menu_wrap {
+            margin-top: 100px;
+           
+        }
+
+        .m_header_wrap .menu_wrap li a {
+            color:#333;
+            margin-left: 50px;
+            font-size: 15px;
+            line-height: 45px;
+
+            font-family: 'S-CoreDream-3Light';
+         
+        }
+        .m_header_wrap .menu_wrap .depth01 {
+            background-color: rgb(139, 162, 136);
+          
+        }
+
+
+        .m_header_wrap .menu_wrap .depth01 > a {
+            /* 큰 메뉴 depth01 */
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+          
+           
+        }
+
+
+        .m_header_wrap .depth02 {
+            display: block;
+            background-color: #fff;
+    
+        }
+
+
+        /* 헤더 */
+
+
+    header nav {display: none;}
+
+    header > div {
+        width: calc(100% - 80px);
+    }
+
+
+        header nav {display: none;}
+    
+
+        header .xi-bars {
+            /* 햄버거 xi */
+            display: block;
+            float: right;
+            line-height: 70px;
+            font-size: 38px;
+            color: #333;
+        }
+
+        .xi-bars span {
+            display: none;
+
+        }
+
+        .cont01 {
+            height: 600px;
+            margin-top: 20px;
+   
+        }
+        .cont01 .cont01_in {
+            width: 100%;
+        }
+
+        .main_visual p {
+            font-size: 23px;
+        }
+
+        .cont01 .cont01_in img {
+            /* 매장 사진 */
+        width: 100%;
+        margin:0 auto;
+    
+        }
+
+        .cont01 .cont01_in {
+            pointer-events: none;
+        }
+
+
+        .cont01 .box01 {
+            width: 100%;
+            height: 700px;
+        }
+
+        .cont01 .box01 img:first-child {
+            /* plants make you happier */
+            top: 18%;
+            width: 500px;
+        }
+
+        .cont01 .box01 img:last-of-type {
+            /* 반짝이 */
+            top: 46%;
+        }
+        .cont01 .box01 p {
+            top: 55%;
+            font-size: 16px;
+        }
+
+
+        .title div img {
+            /* 온라인샵  */
+            width: 440px;
+        }
+
+        .title p a {
+            display: none;
+        }
+
+        .title div img {
+            margin-bottom: 0;
+        }
+
+
+        /* 온라인 샵 */
+     
+        .cont02 .box_wrap {
+            width:100%;
+            overflow: hidden;
+            /* background-color: aqua; */
+       
+        }
+           
+        .cont02 .box_wrap_in {
+            /* 가로 스크롤 */
+            display: flex;
+            overflow-x:scroll;
+            justify-content:space-between;
+           
+        }
+
+
+        .cont02 .box_wrap_in img {
+            /* 스크롤 이미지 */
+            width: 320px;
+            margin-right: 40px;
+        }
+        .cont02 .box_wrap_in .box05 img {
+            margin-right: 0;
+        }
+
+
+
+        .cont03 {
+            height: 900px;
+            /* background-color:darkblue ; */
+        }
+        .cont03  .cont03_in p {
+            font-size: 18px;
+           
+        }
+
+ 
+        .cont03  img {
+            opacity: 100 ;
+            pointer-events: none;
+        }
+
+        .cont03 .cont03_in {
+            max-width: 1000px;
+          
+        }
+
+        .cont03 .cont03_in img {
+            pointer-events: none;
+        }
+
+
+        .cont03 .cont03_in01 img:last-of-type {
+            /* 트레이 */
+            width: 550px;
+            top: 25%;
+            
+            left: 50%;
+            transform: translateX(-50%);
+        
+        }
+        /* 222 */
+
+        .cont03 .cont03_in01 img:first-of-type {
+            /* 목화솜 */
+            width: 300px;
+            top: 52%;
+            left: 44%;
+        }
+
+        .cont03 .cont03_in01 img:nth-of-type(2){
+            /* 나뭇가지 */
+            top: 32%;
+            width: 400px;
+            left: 34%;
+        }
+
+        .cont03 .cont03_in01 img:nth-of-type(3) {
+            /* 돌멩이 */
+            top: 41%;
+            left: 34%;
+        }
+
+        .cont03 .cont03_in02 img:first-of-type {
+            /*  핀셋 */
+            width: 300px;
+            top: 77%;
+        }
+
+        .cont03 .cont03_in02 img:nth-of-type(2){
+            /* 스푼 */
+            width: 300px;
+            left: 30%;
+            top: 85%;
+        }
+
+        .cont03 .cont03_in02 img:nth-of-type(3){
+            /* 솜 */
+           display: none;
+        }
+
+        .cont03 .cont03_in02 img:nth-of-type(4){
+            /* 네임택 */
+           top: 43%;
+           left: 45%;
+        }
+
+        .cont03 .cont03_in02 img:nth-of-type(5){
+            /* 네임택2 */
+           width: 260px;
+           top: 50%;
+           z-index: -9;
+           left: 50%;
+   
+        }
+
+
+        .cont03 .cont03_in02 img:last-of-type {
+            /* 약봉지 */
+            /* width: 480px;
+            top: 95%;
+            left: 20%; */
+            display: none;
+     
+        }
+
+        .cont03-2 {
+            margin-top: 20px;
+        }
+        .cont04_title {
+            /* 쇼룸 */
+            margin-top: 80px;
+            margin-bottom:20px;
+        }
+
+        .cont04 {
+            height: 700px;
+            
+        }
+
+        .cont04 .cont04_wrap {
+            width: 100%;
+      
+        }
+       
+        .cont04_title img {
+            /* 쇼룸 */
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        .cont04 .cont04_wrap .cont04_l {
+            width: 100%;
+            /* background-color: aqua; */
+            margin: 0 auto;
+            float: none;
+            /* 이미지 중앙 */
+            text-align: center;
+   
+        }
+
+        .cont04 .cont04_wrap .cont04_l img {
+            /* 유리병 */
+            margin-top: 0;
+            padding-right: 120px;
+   
+            margin: 0 auto;
+           
+        }
+        
+        
+        .cont04 .cont04_r {
+            /* 마지막 매장 사진 */
+            display: none;
+        }
+
+        .cont04 .cont04_r img {
+            /* 유리병 그림 */
+          
+            display: none;
+   
+        }
+
+
+        footer {
+            width: 100%;
+        }
+
+        footer div p {
+            line-height: 25px;
+        }
+
+        footer div p:last-of-type {
+            margin-top: 8px;
+        }
+        
+}       
+
+
+@media screen and (max-width:600px) {
+
+        /* header */
+
+        header > div {
+         width: calc(100% - 80px);
+        }
+
+        .main_visual {
+            height: 480px;
+            
+        }
+
+        .main_visual p {
+            /* life be happier through plants */
+            text-align: center;
+            top: 83%;
+
+        }
+
+        .main_visual div img:first-child {
+            /* 첫번째 식물 */
+            width: 60px;
+        }
+
+        .main_visual div img:nth-child(2) {
+            /* 두번째 식물 */
+            width: 140px;
+        }
+
+        .main_visual div img:last-child {
+            width: 120px;
+        }
+
+
+        /* cont01 */
+
+        .cont01 .box01 {
+            text-align: center;
+            margin-top: 20px;
+            height: 500px;
+            /* background-color: darkblue; */
+        }
+
+        .cont01 .box01 img:first-child {
+            width: 400px;
+        }
+
+        .cont01 .box01 img:last-of-type {
+            /* 반짝이 */
+            width: 12%;
+            top: 45%;
+        }
+
+        .cont01 .wrap .box01 p:first-of-type {
+            /* 복잡하고 빠르게 진행되는~ */
+            line-height: 25px;
+            top: 55%;
+        }
+
+        .cont01 .box01 p:last-of-type {
+            width: 100%;
+            line-height: 25px;
+            top: 52%;
+        
+        }
+
+        .cont01 .cont01_in {
+            pointer-events: none;
+        }
+
+
+        /* 온라인 */
+
+        .title div img {
+            /* 온라인샵 글자 */
+            margin-top: 20px;
+            width: 330px;
+        }
+
+        .cont02 .box_wrap {
+            width:550px ;
+            overflow: hidden;
+            /* background-color: aqua; */
+       
+        }
+           
+        .cont02 .box_wrap_in {
+            /* 가로 스크롤 */
+            display: flex;
+            overflow-x:scroll;
+            justify-content:space-between;
+           
+        }
+
+
+        .cont02 .box_wrap_in img {
+            /* 스크롤 이미지 */
+            width: 400px;
+            margin-right: 40px;
+        }
+        .cont02 .box_wrap_in .box05 img {
+            margin-right: 0;
+        }
+
+
+
+          /* 상품명 */
+
+          .cont02 .box01 {
+            height: 500px;
+            /* background-color: antiquewhite; */
+        }
+        .cont02 .box01 a p {
+            /* 델피늄 핑크 */
+            position: static;
+            opacity: 100;
+            text-align: center;
+            transform: none;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+       
+        .cont02 .box01 a p:last-of-type {
+            /* 델피늄 핑크 39,000원 */
+            margin-top: 7px;
+            color: #808080;
+        }
+
+        
+        .cont02 .box02 a p {
+            /* 냉이초 */
+            position: static;
+            opacity: 100;
+            text-align: center;
+            transform: none;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+       
+        .cont02 .box02 a p:last-of-type {
+            /* 냉이초 39,000원 */
+            margin-top: 7px;
+            color: #808080;
+        }
+
+
+        .cont02 .box03 a p {
+            /* 루스커스 */
+            position: static;
+            opacity: 100;
+            text-align: center;
+            transform: none;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+       
+        .cont02 .box03 a p:last-of-type {
+            /* 루스커스 39,000원 */
+            margin-top: 7px;
+            color: #808080;
+        }
+
+        .cont02 .box04 a p {
+            /* 타바리아 펀 */
+            position: static;
+            opacity: 100;
+            text-align: center;
+            transform: none;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+       
+        .cont02 .box04 a p:last-of-type {
+            /* 타바리아펀 39,000원 */
+            margin-top: 7px;
+            color: #808080;
+        }
+
+        .cont02 .box05 a p {
+            /* 수국 */
+            position: static;
+            opacity: 100;
+            text-align: center;
+            transform: none;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+       
+        .cont02 .box05 a p:last-of-type {
+            /* 수국 39,000원 */
+            margin-top: 7px;
+            color: #808080;
+        }
+
+
+
+
+        .cont03 {
+            height: 800px;
+            /* background-color:darkblue ; */
+        }
+
+        .cont03  img {
+            opacity: 100 ;
+            pointer-events: none;
+        }
+
+        .cont03 .cont03_in {
+             /* plants prescription */
+
+            max-width: 600px;
+            margin-top: 90px;
+        }
+
+
+        .cont03 .wrap .cont03_in img {
+            /* plants prescription */
+            width: 400px;
+            pointer-events: none;
+        }
+
+        .cont03  .cont03_in p {
+            font-size: 16px;
+        }
+
+
+         /* 트레이 */
+        .cont03 .cont03_in01 img:last-of-type {
+           
+            width: 550px;
+            top: 20%;
+            
+            left: 50%;
+            transform: translateX(-50%);
+        
+        }
+         /* 목화솜 */
+        .cont03 .cont03_in01 img:first-of-type {
+           
+            width: 300px;
+            top: 52%;
+            left: 44%;
+        }
+        /* 나뭇가지 */
+        .cont03 .cont03_in01 img:nth-of-type(2){
+            top: 28%;
+            width: 400px;
+            left: 15%;
+        }
+         /* 돌멩이 */
+        .cont03 .cont03_in01 img:nth-of-type(3) {
+           
+            top: 40%;
+            left: 23%;
+        }
+
+        /* 솜 */
+        .cont03 .cont03_in02 img:nth-of-type(3){
+          
+           display: none;
+        }
+         /* 네임택1 */
+        .cont03 .cont03_in02 img:nth-of-type(4){
+           width: 290px;
+           top: 42%;
+           left: 45%;
+        }
+         /* 네임택2 */
+        .cont03 .cont03_in02 img:nth-of-type(5){
+           
+           width: 260px;
+           top: 50%;
+           left: 50%;
+           z-index: -9;
+   
+        }
+        
+        /* 약봉지 */
+        .cont03 .cont03_in02 img:last-of-type {
+            
+            /* width: 480px;
+            top: 95%;
+            left: 20%; */
+            display: none;
+     
+        }
+
+         /*  핀셋 */
+         .cont03 .cont03_in02 img:first-of-type {
+           
+            width: 300px;
+            left: 19%;
+            top: 80%;
+        }
+        /* 스푼 */
+        .cont03 .cont03_in02 img:nth-of-type(2){
+            
+            width: 300px;
+            left: 35%;
+            top: 90%;
+        }        
+
+        .cont03-2 p a {
+            /* find out more 버튼 */
+            background-color: #333;
+            color: #fff;
+
+            line-height:48px;
+        }
+
+
+        .cont04 {
+            height: 600px;
+
+        }
+
+        .cont04 .cont04_wrap .cont04_l {
+            width: 100%;
+            /* background-color: antiquewhite; */
+        }
+
+        .cont04_title img {
+            /* showroom */
+            width: 340px;
+            padding-top: 20px;
+        }
+
+        .cont04 .cont04_wrap .cont04_l img {
+            /* 유리병 사진 */
+            width: 370px;
+        }
+
+        .cont04 .cont04_wrap .btn01 a {
+            /* find out more 버튼 */
+            background-color: #333;
+            color: #fff;
+
+            line-height:48px;
+        }
+
+
+        footer {
+            padding-top: 20px;
+            height: 160px;
+        }
+
+        footer .footer_wrap {
+            width: calc(100% - 70px);
+        }
+
+        footer .footerbox {
+            width: 80%;
+        }
+
+        .footerbox p:first-of-type {
+            /* 슬로우 파마씨 ㅣ 사업자번호:000-00-00000
+            ㅣ 대표자: 이은혜 */
+            font-size: 14px;
+        }
+
+        .footerbox p:nth-of-type(2) {
+            /* 개인정보보호 책임자:이구름 ㅣ 통신판매업:제2021-서울서초-3211호 */
+            font-size: 14px;
+
+
+        }
+
+        footer div p:nth-child(3) {
+
+            /* OFFICE:02)548-9937 ㅣ SHOWROOM: 02)336-9967 */
+            font-size: 14px;
+
+        }
+
+        footer .insta {
+            width: 15%;
+            font-size: 40px;
+        }
+
+    } /* 600 뷰포트 */
+
+
+@media screen and (max-width:500px) {
+
+    .main_visual div img:first-child {
+        /* 1 이미지 */
+        width: 53px;
+    }
+
+    .main_visual div img:nth-child(2) {
+        /* 2이미지 */
+        width: 120px;
+    }
+
+    .main_visual div img:last-child { 
+        /* 3 이미지 */
+        width: 100px;
+
+    }
+
+    .main_visual p {
+        /* Life be happier through plants. */
+
+        font-size: 18px;
+        top: 88%;
+    }
+
+    .cont01 .box01 {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    .cont01 .box01 img:first-child {
+        /* plants make you happier */
+        width: 300px;
+        
+    }
+
+    .cont01 .wrap .box01 p:first-of-type {
+        /* 복잡하고 빠르게 진행되는 */
+        font-size: 15px;
+        line-height: 22px;
+
+
+    }
+    .cont01 .box01 p:last-of-type {
+        /* 슬로우 파마씨는 식물을 통해 당신에게 */
+
+
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .title {
+        margin-top: 0;
+    }
+    .title div {
+        margin-top: 300px;
+        /* background-color: antiquewhite; */
+    }
+
+    .title div img {
+        /* 온라인샵 타이틀 */
+        width: 260px;
+    }
+
+
+    .cont02 {
+        margin: 20px 0;
+    }
+    .cont02 .box_wrap {
+        /* md 좌우 슬라이드 */
+        width: 480px;
+      
+       
+    }
+
+    .cont02 .box01 {
+        height: 300px;
+    }
+
+    .cont02 .box_wrap_in img {
+        /* 상품 이미지 */
+        width: 340px;
+    }
+
+    .cont02 .box01 a p {
+        font-size: 15px;
+    }
+
+    .cont03 {
+       
+        height: 640px;
+    }
+    .cont03 .cont03_in {
+        width: 470px;
+        text-align: center;
+ 
+
+    }
+
+    /* 이미지 크기조정 */
+    .cont03 .wrap .cont03_in img {
+        /* plants prescription */
+        margin-bottom: 12px;
+        width: 300px;
+    }
+
+    .cont03 .cont03_in01 img:last-of-type {
+        /* 트레이 */
+        width: 450px;
+    }
+    
+    .cont03 .cont03_in01 img:first-of-type {
+        /* 목화솜  */
+        width: 200px;
+        top: 57%;
+    }
+
+    .cont03 .cont03_in01 img:nth-of-type(2){
+        /* 나뭇가지 */
+        width: 370px;
+    }
+
+    .cont03 .cont03_in01 img:nth-of-type(3) {
+        /* 돌멩이 */
+        width:150px ;
+        top: 43%;
+    }
+    .cont03 .wrap .cont03_in02 img:nth-of-type(4) {
+        /* 태그 위 */
+        width: 200px;
+        left: 53%;
+    }
+    .cont03 .cont03_in02 img:nth-of-type(5) {
+        /* 태그 아래 */
+        width: 210px;
+    }
+
+    .cont03 .cont03_in02 img:first-of-type {
+        /* 핀셋 */
+        width: 250px;
+        top: 81%;
+    }
+    .cont03 .cont03_in02 img:nth-of-type(2) {
+        /* 스푼 */
+        width: 250px;
+        top: 90%;
+    }
+
+    .cont03-2 p a {
+        /* find out more 버튼 */
+        margin-top: 5px;
+
+    }
+
+    .cont03-2 {
+        text-align: center;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .cont04 {
+        height: 490px;
+    }
+
+    .cont04_title img {
+        /* 쇼룸 타이틀 */
+        width: 290px;
+        padding-top:0;
+    }
+
+    .cont04 .cont04_wrap .cont04_l img {
+        /* 유리병 일러스트 */
+        width: 300px;
+        padding-left: 0;
+    }
+
+    .cont04 .cont04_wrap .cont04_l p:first-of-type {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+
+    footer {
+
+       padding-top:30px ;
+    }
+
+    .footerbox p {
+        font-size: 14px;
+    }
+
+
+    .footerbox p:first-of-type {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footerbox p:nth-of-type(2) {
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    footer div p:nth-child(3) {
+        padding-top: 10px;
+    }
+
+    footer div p:last-of-type {
+        margin-top: 0;
+        font-size: 13px;
+        line-height: 20px;
+
+    }
+    
+    footer .insta {
+        width: 15%;
+    }
+
+
+} /* 뷰포트 500 */
+
+
+@media screen and (max-width:414px) {
+
+    .cont02 .box_wrap {
+        width: 100%;
+    }
+
+    .cont02 .box_wrap_in img {
+        width: 270px;
+    }
+
+    .cont03 .cont03_in {
+        width: 100%;
+    }
+
+    .title div {
+        margin-top: 200px;
+    }
+
+
+    /* 이미지 크기조정 */
+    .cont03 .wrap .cont03_in img {
+        /* plants prescription */
+        margin-bottom: 12px;
+        width: 280px;
+    }
+
+    .cont03 .cont03_in01 img:last-of-type {
+        /* 트레이 */
+        width: 350px;
+    }
+    
+    .cont03 .cont03_in01 img:first-of-type {
+        /* 목화솜  */
+        width: 170px;
+        top: 48%;
+    }
+
+    .cont03 .cont03_in01 img:nth-of-type(2){
+        /* 나뭇가지 */
+        width: 290px;
+    }
+
+    .cont03 .cont03_in01 img:nth-of-type(3) {
+        /* 돌멩이 */
+        width:120px ;
+        top: 38%;
+    }
+    .cont03 .wrap .cont03_in02 img:nth-of-type(4) {
+        /* 태그 위 */
+        width: 160px;
+        left: 53%;
+    }
+    .cont03 .cont03_in02 img:nth-of-type(5) {
+        /* 태그 아래 */
+        width: 170px;
+    }
+
+    .cont03 .cont03_in02 img:first-of-type {
+        /* 핀셋 */
+        width: 200px;
+        top: 75%;
+    }
+    .cont03 .cont03_in02 img:nth-of-type(2) {
+        /* 스푼 */
+        width: 200px;
+        top: 85%;
+    }
+
+    .cont04 {
+        height: 440px;
+    }
+
+    .cont04_title img {
+        width: 250px;
+    }
+
+    .cont04 .cont04_wrap .cont04_l img {
+        width: 250px;
+        padding-right: 0;
+    }
+
+    footer {
+        height: 230px;
+    }
+
+
+
+
+} /*414 end */
+
+
+
+@media screen and (max-width:320px) {
+
+ 
+    header div h1 {
+        left: 15%;
+        /* transform: translateX(-50%); */
+    }
+
+    .m_header_wrap .xi-bars {
+        top: 1%;
+    }
+    
+    header div img {
+        width: 200px;
+    }
+
+
+    .cont01 .box01 img:first-child {
+         /* plants make you happier */
+         width: 250px;
+
+    }
+
+    .cont01 .wrap .box01 p {
+        /* 복잡하고 빠르게~ */
+        font-size: 15px;
+
+    }
+
+    .title div img {
+        /* 온라인샵 타이틀 */
+        width: 230px;
+    }
+ 
+
+    .cont02 .box_wrap {
+         width: 300px;
+         overflow: hidden;
+        
+    } 
+    .cont02 .box02 {
+        overflow: hidden;
+    }
+
+
+    .title div {
+        /* 온라인샵 위 여백 */
+        margin-top: 90px;
+    }
+
+    .cont02 .box_wrap_in img {
+        /* md 상품 칸 */
+        width: 220px;
+    }
+    .cont03 {
+        width: 100%;
+        height: 480px;
+    }
+
+    .cont03 .wrap02 {
+        width: 320px;
+    }
+
+    .cont03 .cont03_in {
+        width: 300px;
+    }
+    /* 이미지 크기조정 */
+    .cont03 .wrap .cont03_in img {
+        /* plants prescription */
+        margin-bottom: 12px;
+        width: 230px;
+    }
+
+    .cont03 .cont03_in p {
+        /* 일상의 피로에 지친 */
+        width: 100px;
+        margin: 0 auto;
+    }
+
+
+    .cont03 .cont03_in01 img:last-of-type {
+        /* 트레이 */
+        width: 270px;
+        top: 35%;
+    }
+    
+    .cont03 .cont03_in01 img:first-of-type {
+        /* 목화솜  */
+        width: 150px;
+        top: 60%;
+
+    }
+
+    .cont03 .cont03_in01 img:nth-of-type(2){
+        /* 나뭇가지 */
+        width: 220px;
+        top: 44%;
+    }
+
+    .cont03 .cont03_in01 img:nth-of-type(3) {
+        /* 돌멩이 */
+        width:90px ;
+        top: 55%;
+    }
+    .cont03 .wrap .cont03_in02 img:nth-of-type(4) {
+        /* 태그 위 */
+        width: 120px;
+        left: 53%;
+        top: 55%;
+    }
+
+    .cont03 .cont03_in02 img:nth-of-type(5) {
+        /* 태그 아래 */
+        width: 110px;
+        top: 59%;
+    }
+
+    .cont03 .cont03_in02 img:first-of-type {
+        /* 핀셋 */
+        width: 120px;
+        top: 84%;
+    }
+    .cont03 .cont03_in02 img:nth-of-type(2) {
+        /* 스푼 */
+        width: 120px;
+        top: 90%;
+    }
+
+    .cont03-2 p a {
+        /* find out more */
+        margin-top: 30px;
+    }
+
+    .cont04 {
+        height: 380px;
+    }
+
+    .cont04 .cont04_wrap .cont04_l img {
+        /* 유리병 일러스트 */
+        width: 250px;
+    }
+
+    .cont04_title img {
+        /* 쇼룸 */
+        width: 230px;
+    }
+
+    .cont04 .cont04_wrap .cont04_l img {
+        /* 유리병일러스트 */
+            width: 170px;
+            padding-right: 0px;
+    }
+
+    footer .footerbox {
+        width: 100%;
+    }
+    
+    footer .insta {
+        width: 100%;
+        float: none;
+    }
+
+
+} /*320 end */
